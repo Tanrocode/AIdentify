@@ -1,0 +1,27 @@
+{
+  "weights": [
+    2.1295284660127956,
+    -39.25745869771337,
+    -33.90016320720373,
+    2.337533132415246,
+    0.0009149045747778875,
+    -0.007098972609195482,
+    1.992723282947026,
+    -0.042219505295526295,
+    12.657622519643448,
+    0.00029247830583524
+  ],
+  "bias": 25.038323321184887,
+  "feature_names": [
+    "verb_ratio",
+    "capital_letter_ratio",
+    "lowercase_letter_ratio",
+    "lexical_diversity",
+    "homonym_frequency",
+    "synonym_frequency",
+    "burstiness",
+    "sentence_count",
+    "negation_ratio",
+    "word_count"
+  ]
+}

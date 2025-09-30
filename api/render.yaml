@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-detector-api
+    env: python
+    buildCommand: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+      python -c "import nltk; nltk.download('punkt'); nltk.download('averaged_perceptron_tagger'); nltk.download('wordnet')"
+    startCommand: gunicorn app:app --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: PIP_VERSION
+        value: 25.1.1
+      - key: PYTHONPATH
+        value: /opt/render/project/src 
