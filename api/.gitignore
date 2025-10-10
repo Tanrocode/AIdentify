@@ -37,4 +37,4 @@ ENV/
 Thumbs.db
 
 # Model files
-random_forest_model.joblib 
+random_forest_model.joblib  
